@@ -17,13 +17,13 @@ const InvestmentContext = createContext<InvestmentContextType | undefined>(undef
 export const InvestmentProvider = ({ children }: { children: ReactNode }) => {
   const [investmentPlans, setInvestmentPlans] = useState<InvestmentPlan[]>([]);
 
-  // Make the investment plans readable by Copilot
+  
   useCopilotReadable({
     description: 'The current list of investment plans',
     value: JSON.stringify(investmentPlans),
   });
 
-  // Function to add a new investment plan
+
   const addInvestmentPlan = (category: string, percentage: number, details: string) => {
     const newPlan: InvestmentPlan = {
       id: investmentPlans.length + 1,
@@ -35,13 +35,13 @@ export const InvestmentProvider = ({ children }: { children: ReactNode }) => {
     console.log(`Added Investment Plan: ${category} (${percentage}%) - ${details}`); // Debug log
   };
 
-  // Function to delete an investment plan by ID
+ 
   const deleteInvestmentPlan = (id: number) => {
     setInvestmentPlans((prevPlans) => prevPlans.filter((plan) => plan.id !== id));
     console.log(`Deleted Investment Plan with ID: ${id}`); // Debug log
   };
 
-  // Define the custom action to add an investment plan
+
   useCopilotAction({
     name: 'addInvestmentPlan',
     description: 'Add a new investment plan to the list.',

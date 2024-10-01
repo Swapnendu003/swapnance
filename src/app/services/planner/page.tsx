@@ -2,7 +2,7 @@
 
 import React from "react";
 import { CopilotSidebar } from "@copilotkit/react-ui";
-import { InvestmentProvider } from "../../../components/investment-context";
+import { InvestmentProvider } from "../../../utils/investment-context";
 import InvestmentPlansDisplay from "../../../components/investment-plans-display";
 import InvestmentPieChart from "@/components/InvestmentPieChart";
 import { motion } from "framer-motion";

@@ -3,7 +3,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useInvestment } from './investment-context';
+import { useInvestment } from '../utils/investment-context';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trash2, ChevronDown, ChevronUp } from 'lucide-react'; // Icons for delete and expand/collapse
 

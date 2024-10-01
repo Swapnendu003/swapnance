@@ -1,13 +1,11 @@
-// app/make-investment-planner/InvestmentPieChart.tsx
-
 'use client';
 
 import React, { useMemo } from 'react';
 import { Pie } from 'react-chartjs-2';
-import { useInvestment } from '@/components/investment-context';
+import { useInvestment } from '@/utils/investment-context';
 import { motion } from 'framer-motion';
 import '@/types/chartjs'; // Ensure Chart.js is configured
-//import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title } from '@/types/chartjs';
+import { TooltipItem } from 'chart.js'; // Import TooltipItem
 
 // Define the InvestmentPieChart component
 const InvestmentPieChartComponent: React.FC = () => {
@@ -61,7 +59,7 @@ const InvestmentPieChartComponent: React.FC = () => {
       },
       tooltip: {
         callbacks: {
-          label: function (context: any) {
+          label: function (context: TooltipItem<'pie'>) {
             const label = context.label || '';
             const value = context.raw || 0;
             return `${label}: ${value}%`;
