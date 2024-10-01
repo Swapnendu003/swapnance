@@ -7,10 +7,17 @@ import { motion } from 'framer-motion';
 import { CopilotKit } from "@copilotkit/react-core";
 import { CopilotPopup } from "@copilotkit/react-ui";
 import "@copilotkit/react-ui/styles.css";
+import { useRouter } from "next/navigation";
+
 
 
 const Landing: React.FC = () => {
+  const router = useRouter();
   const COPILOT_CLOUD_PUBLIC_API_KEY = process.env.NEXT_PUBLIC_COPILOT_CLOUD_PUBLIC_API_KEY;
+  const handleClick = () => {
+router.push ("/services");
+
+  }
   return (
     <CopilotKit publicApiKey={COPILOT_CLOUD_PUBLIC_API_KEY}>
     <motion.div
@@ -72,8 +79,9 @@ const Landing: React.FC = () => {
           <motion.button
             whileHover={{ scale: 1.1, backgroundColor: "#333333" }}
             className="bg-black text-white rounded-full px-6 py-3 font-semibold hover:bg-gray-800 transition"
+            onClick={handleClick}
           >
-            Lets Talk
+            Lets Get Started
           </motion.button>
         </motion.div>
 
@@ -135,14 +143,13 @@ const Landing: React.FC = () => {
         />
       </motion.div>
     </motion.div>
-    <CopilotPopup
-        instructions={"You are assisting the user as best as you can. Ansewr in the best way possible given the data you have."}
-        labels={{
-          title: "Popup Assistant",
-          initial: "Need any help?",
-        }}
+      <CopilotPopup 
+      instructions="You are an AI language model specialized in providing guidance on various finance-related topics based on the Indian market. Your expertise includes Indian financial markets, investment strategies, taxation, banking, regulations, and economic trends. You offer accurate, up-to-date, and comprehensive information to help users understand and navigate the Indian financial landscape effectively."
+      labels={{
+        title: "Money Maker",
+        initial: "Hi! 👋 How can I assist you in making money?",
+      }}
       />
-      <CopilotPopup />
     </CopilotKit>
   );
 };
