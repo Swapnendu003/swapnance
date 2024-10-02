@@ -1,9 +1,7 @@
-// app/components/OurServices.tsx
-
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Wallet, Briefcase } from "lucide-react";
+import { Wallet, Briefcase, BarChart2 } from "lucide-react";
 import Link from "next/link";
 
 const OurServices: React.FC = () => {
@@ -11,7 +9,7 @@ const OurServices: React.FC = () => {
     <div className="w-full">
       {/* Services Section */}
       <div className="w-full py-20 px-6 md:px-20 bg-gradient-to-b from-gray-100 to-blue-50 text-gray-900 flex flex-col items-center">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.h4
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -31,7 +29,7 @@ const OurServices: React.FC = () => {
         </div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-10"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
           initial="hidden"
           animate="visible"
           variants={{
@@ -49,6 +47,7 @@ const OurServices: React.FC = () => {
             },
           }}
         >
+          {/* Card 1: Investment Planner */}
           <Link href="/services/planner">
             <motion.div
               whileHover={{ scale: 1.05, translateY: -10 }}
@@ -70,6 +69,29 @@ const OurServices: React.FC = () => {
             </motion.div>
           </Link>
 
+          {/* Card 2: Finance Tracker */}
+          <Link href="/services/finance-tracker">
+            <motion.div
+              whileHover={{ scale: 1.05, translateY: -10 }}
+              className="flex flex-col items-center bg-gradient-to-b from-green-500 to-green-400 text-white rounded-xl shadow-lg hover:shadow-2xl p-8 relative overflow-hidden transition-all duration-300"
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <div className="bg-green-800 rounded-full p-6 mb-4 z-10">
+                <BarChart2 color="#FFFFFF" size={40} />
+              </div>
+              <h3 className="text-2xl font-bold mb-4 z-10 text-center">
+                Track Your Finance Effectively with Swapnance
+              </h3>
+              <p className="text-center z-10">
+                Keep a close watch on your expenses and savings to effectively manage your financial health.
+              </p>
+            </motion.div>
+          </Link>
+
+          {/* Card 3: Quiz */}
           <Link href="/services/quiz">
             <motion.div
               whileHover={{ scale: 1.05, translateY: -10 }}
@@ -94,7 +116,7 @@ const OurServices: React.FC = () => {
       </div>
 
       {/* Footer Section */}
-      <footer className="w-full py-6 bg-blue-800 text-white text-center mt-0 h-[8rem]">
+      <footer className="w-full py-6 bg-blue-800 text-white text-center mt-0 h-[7rem]">
         <p className="text-lg mt-5">
           Made with love <span className="text-red-500">❤️</span> by Swapnendu Banerjee
         </p>
