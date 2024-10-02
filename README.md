@@ -68,8 +68,12 @@ To run Swapnance locally, follow these steps:
    ```bash
    npm install
    ```
+4. **Setup the .env.local**
+   ```
+   OPENAI_API_KEY=GIVE_YOUR_API_KEY
+   ```
 
-4. **Start the development server**
+5. **Start the development server**
    ```bash
    npm run dev
    ```
