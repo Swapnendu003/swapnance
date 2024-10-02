@@ -24,9 +24,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const COPILOT_CLOUD_PUBLIC_API_KEY = process.env.NEXT_PUBLIC_COPILOT_CLOUD_PUBLIC_API_KEY;
+
   return (
-    <CopilotKit publicApiKey={COPILOT_CLOUD_PUBLIC_API_KEY}>
+    <CopilotKit runtimeUrl="/api/copilotkit">
       <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
