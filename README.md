@@ -22,7 +22,7 @@
 
 ## Demo 🖥️
 
-Check out the **Swapnance** demo here: [Swapnance Live Demo](https://youtu.be/422HZrr-QYA) *(Add the link to your demo)*
+Check out the **Swapnance** demo here: [Swapnance Live Demo](https://youtu.be/422HZrr-QYA) 
 
 ## Screenshots 📸
 
