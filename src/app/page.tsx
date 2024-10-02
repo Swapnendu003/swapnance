@@ -2,14 +2,14 @@
 import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { CopilotKit } from "@copilotkit/react-core";
+//import { CopilotKit } from "@copilotkit/react-core";
 import { CopilotPopup } from "@copilotkit/react-ui";
 import "@copilotkit/react-ui/styles.css";
 import { useRouter } from "next/navigation";
 
 const Landing: React.FC = () => {
   const router = useRouter();
-  const COPILOT_CLOUD_PUBLIC_API_KEY = process.env.NEXT_PUBLIC_COPILOT_CLOUD_PUBLIC_API_KEY;
+  //const COPILOT_CLOUD_PUBLIC_API_KEY = process.env.NEXT_PUBLIC_COPILOT_CLOUD_PUBLIC_API_KEY;
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Landing: React.FC = () => {
   };
 
   return (
-    <CopilotKit publicApiKey={COPILOT_CLOUD_PUBLIC_API_KEY}>
+    <>
       {showPopup && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -194,7 +194,7 @@ const Landing: React.FC = () => {
           initial: "Hi! 👋 How can I assist you in making money?",
         }}
       />
-    </CopilotKit>
+  </>
   );
 };
 
