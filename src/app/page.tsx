@@ -127,7 +127,7 @@ const Landing: React.FC = () => {
               className="bg-black text-white rounded-full px-6 py-3 font-semibold hover:bg-gray-800 transition"
               onClick={handleClick}
             >
-              Let's Get Started
+              Lets Get Started
             </motion.button>
           </motion.div>
 
