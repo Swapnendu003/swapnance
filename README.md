@@ -1,6 +1,11 @@
+Certainly! I'll add the **Finance Tracker** feature to your README, making it align seamlessly with the existing sections and maintain the same format. Here's your updated README:
+
+---
+
 # Swapnance 🏦💸
 
 **Swapnance** is a personal finance aid application that leverages the power of **CopilotKit** to provide personalized investment plans based on users' age and monthly income. Additionally, Swapnance encourages financial learning by awarding badges to users based on their investment knowledge. Whether you're a novice or a seasoned investor, Swapnance helps you make informed financial decisions in a fun and interactive way!
+
 ![image](https://github.com/user-attachments/assets/10092a84-3b50-4200-a621-6b84e4a7d575)
 
 ## Features ✨
@@ -10,31 +15,40 @@
 - Plans are customized to align with your risk appetite and financial goals.
 - Simple, intuitive interface for easy interaction.
 
-### 2️⃣ Earn Badges Based on Financial Knowledge
+### 2️⃣ Finance Tracker to Manage Your Expenses
+- Keep track of your income and expenses efficiently.
+- View an overview of spending categories with easy-to-understand charts.
+- Stay on top of your financial health by monitoring transactions in real-time.
+- Get personalized saving tips based on your income and spending patterns.
+
+### 3️⃣ Earn Badges Based on Financial Knowledge
 - Take quizzes to assess your understanding of investment principles and portfolio management.
 - Earn exclusive badges based on your quiz performance.
 - Keep improving your financial literacy while earning rewards.
 
-### 3️⃣ AI-Powered Insights with CopilotKit
+### 4️⃣ AI-Powered Insights with CopilotKit
 - **CopilotKit** offers personalized suggestions and insights.
 - Quizzes are adaptive, becoming more challenging as you improve.
 - Up-to-date investment strategies based on the latest financial trends.
 
 ## Demo 🖥️
 
-Check out the **Swapnance** demo here: [Swapnance Live Demo](https://youtu.be/422HZrr-QYA) 
+Check out the **Swapnance** demo here: [Swapnance Live Demo](https://youtu.be/422HZrr-QYA)
 
 ## Screenshots 📸
 
 ### Investment Plan Feature
 ![image](https://github.com/user-attachments/assets/94b561bb-3abf-49c9-a802-cbb1f41e03ab)
 
-
 ![image](https://github.com/user-attachments/assets/864e4373-3281-48a3-8c36-de6071784470)
+
+### Finance Tracker Dashboard
+![image](https://github.com/user-attachments/assets/3dad18af-ebdf-4da5-af0a-23dc65463119)
+
+> Keep track of your finances easily with our intuitive and user-friendly tracker. Get a detailed expense breakdown with charts, track your transactions, and stay on top of your financial goals.
 
 ### Badge Showcase
 ![image](https://github.com/user-attachments/assets/50d017a9-d927-470f-b333-8344741da9a8)
-
 
 ## Installation 🛠️
 
@@ -67,6 +81,8 @@ The application should now be running on `http://localhost:3000`.
 - **NEXT.JS**: Frontend framework
 - **CopilotKit**: AI-powered suggestions and adaptive quiz generation
 - **Tailwind CSS**: For styling the application
+- **MongoDB**: Database for storing user and financial data
+- **Express.js**: Backend server handling API routes
 
 ## Contact 📬
 
