@@ -1,7 +1,3 @@
-Certainly! I'll add the **Finance Tracker** feature to your README, making it align seamlessly with the existing sections and maintain the same format. Here's your updated README:
-
----
-
 # Swapnance 🏦💸
 
 **Swapnance** is a personal finance aid application that leverages the power of **CopilotKit** to provide personalized investment plans based on users' age and monthly income. Additionally, Swapnance encourages financial learning by awarding badges to users based on their investment knowledge. Whether you're a novice or a seasoned investor, Swapnance helps you make informed financial decisions in a fun and interactive way!
